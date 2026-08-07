@@ -1,78 +1,71 @@
-1  html {
-2    font-size: 62.5%;
-3  }
-4
-5  body {
-6    background: black;
-7    margin: 0;
-8    min-height: 100vh;
-9    display: flex;
-10   justify-content: center;
-11   align-items: center;
-12 }
-13
-14 @keyframes pop {
-15   0% {
-16     transform: scale(0);
-17   }
-18
-19   25% {
-20     transform: scale(1.3);
-21   }
-22
-23   50% {
-24     transform: scale(1.8);
-25   }
-26
-27   100% {
-28     transform: scale(1);
-29   }
-30 }
-31
-32 article {
-33   text-align: center;
-34   width: 100%;
-35 }
-36
-37 .icon {
-38   width: 120px;
-39   height: 120px;
-40   border-radius: 50%;
-41   margin: 20px auto;
-42   display: block;
-43 }
-44
-45 h4 {
-46   color: white;
-47 }
-48
-49 p {
-50   color: white;
-51 }
-52
-53 .first {
-54   font-size: 150%;
-55   margin-bottom: 20px;
-56   animation-name: pop;
-57   animation-duration: 2s;
-58   animation-delay: 0.5s;
-59   animation-iteration-count: 1;
-60   animation-timing-function: ease;
-61 }
-62
-63 .second {
-64   font-size: 300%;
-65   font-weight: normal;
-66   margin: 20px 0 10px;
-67 }
-68
-69 .third {
-70   font-size: 150%;
-71   margin: 10px 0;
-72 }
-73
-74 .role {
-75   color: white;
-76   font-size: 180%;
-77   margin: 10px 0;
-78 }
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: black;
+  margin: 20%;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.3);
+  }
+
+  50% {
+    transform: scale(1.8);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  left: 42%;
+  border-radius: 100%;
+}
+
+h4 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.first {
+  font-size: 150%;
+  position: relative;
+  left: 45%;
+  margin-bottom: 7%;
+  align-items: center;
+  animation-name: pop;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+.second {
+  font-size: 300%;
+  font-weight: normal;
+  position: relative;
+  left: 31%;
+  align-items: center;
+}
+
+.third {
+  font-size: 150%;
+  position: relative;
+  left: 33%;
+  align-items: center;
+}
